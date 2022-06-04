@@ -124,6 +124,7 @@ cartIcon.addEventListener("click", () => {
 });
 
 addToCart.addEventListener("click", (e) => {
+    e.preventDefault();
     totaltQty += qty;
     addQtyToCart();
     showCart();
