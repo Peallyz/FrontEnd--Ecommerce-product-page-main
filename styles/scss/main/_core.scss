@@ -1,0 +1,124 @@
+main {
+    margin-top: 60px;
+    display: flex;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.container__left,
+.container__right {
+    width: 50%;
+    margin-top: 15px;
+    min-width: 400px;
+}
+
+//Images
+
+.container__pic {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 350px;
+
+    .next,
+    .previous {
+        display: none;
+    }
+    .main__pic {
+        width: 100%;
+        margin: 0 auto 30px;
+        border-radius: 15px;
+        cursor: pointer;
+        overflow: hidden;
+        transform: translateX(25px);
+        transition: opacity 0.1s, transform 0.1s ease-out;
+        opacity: 0;
+        &.animation {
+            transform: rotate(0deg) translateX(0%);
+            opacity: 1;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .thumbnail__pic {
+        width: 20%;
+        margin-right: 20px;
+        border-radius: 15px;
+        cursor: pointer;
+        overflow: hidden;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+
+            pointer-events: none;
+        }
+    }
+}
+
+.img__active__box {
+    outline: 3px solid $orange;
+}
+.img__active {
+    opacity: 0.5;
+}
+
+// Decription
+
+.container__right {
+    padding: 60px 60px;
+}
+.container__txt {
+    h3 {
+        color: $orange;
+        font-size: 1.6rem;
+    }
+
+    h1 {
+        color: $noir;
+        font-size: 3.5rem;
+        line-height: 40px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+        line-height: 25px;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+
+        strong {
+            color: $noir;
+            font-size: 2.5rem;
+            margin-right: 15px;
+        }
+        span {
+            display: inline-block;
+            font-size: 1.6rem;
+            color: $orange;
+            background-color: $paleOrange;
+            padding: 3px 6px;
+            border-radius: 3px;
+            vertical-align: text-bottom;
+        }
+    }
+
+    h4 {
+        color: $grisClair;
+        font-size: 1.6rem;
+        text-decoration: line-through;
+    }
+}

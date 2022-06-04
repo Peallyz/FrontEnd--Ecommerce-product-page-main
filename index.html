@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <link rel="stylesheet" href="styles/css/style.css" />
+
+        <title>Frontend Mentor | E-commerce product page</title>
+    </head>
+    <body>
+        <header>
+            <img
+                class="menu__logo"
+                src="/images/icon-menu.svg"
+                alt="menu logo"
+            />
+            <img class="logo" src="/images/logo.svg" alt="Sneakers Logo" />
+
+            <nav id="nav">
+                <ul>
+                    <img
+                        class="menu__close"
+                        src="/images/icon-close.svg"
+                        alt="cross to close"
+                    />
+                    <li>
+                        <a href="#">Collections</a>
+                    </li>
+                    <li>
+                        <a href="#">Men</a>
+                    </li>
+                    <li>
+                        <a href="#">Women</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="profil">
+                <img
+                    class="icon__cart"
+                    src="/images/icon-cart.svg"
+                    alt="cart logo"
+                />
+                <div class="count inactive__cart">
+                    <span>0</span>
+                </div>
+                <img class="avatar" src="/images/image-avatar.png" alt="" />
+
+                <div class="cart inactive__cart">
+                    <div class="cart__title"><h3>Cart</h3></div>
+                    <div class="cart__content">
+                        <span>Your cart is empty.</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container__left">
+                <div class="container__pic">
+                    <div class="previous">
+                        <img src="/images/icon-previous.svg" alt="previous" />
+                    </div>
+                    <div class="pic main__pic animation">
+                        <img src="images/image-product-1.jpg" alt="sneakers" />
+                    </div>
+                    <div class="next">
+                        <img src="/images/icon-next.svg" alt="next" />
+                    </div>
+                    <div
+                        data-index="1"
+                        class="thumbnail__pic pic img__active__box"
+                    >
+                        <img
+                            class="img__active"
+                            src="images/image-product-1-thumbnail.jpg"
+                            alt="sneakers"
+                        />
+                    </div>
+
+                    <div data-index="2" class="thumbnail__pic pic">
+                        <img
+                            src="images/image-product-2-thumbnail.jpg"
+                            alt="sneakers"
+                        />
+                    </div>
+
+                    <div data-index="3" class="thumbnail__pic pic">
+                        <img
+                            src="images/image-product-3-thumbnail.jpg"
+                            alt="sneakers"
+                        />
+                    </div>
+
+                    <div data-index="4" class="thumbnail__pic pic">
+                        <img
+                            src="images/image-product-4-thumbnail.jpg"
+                            alt="sneakers"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="container__right">
+                <div class="container__txt">
+                    <h3>Sneaker Company</h3>
+                    <h1>Fall Limited Edition Sneakers</h1>
+                    <p>
+                        These low-profile sneakers are your perfect casual wear
+                        companion. Featuring a durable rubber outer sole,
+                        they’ll withstand everything the weather can offer.
+                    </p>
+                    <div class="price">
+                        <h2><strong>$125.00</strong><span> 50%</span></h2>
+                        <h4>$250.00</h4>
+                    </div>
+
+                    <form>
+                        <div class="quantity">
+                            <button class="minus">
+                                <img src="images/icon-minus.svg" alt="minus" />
+                            </button>
+                            <span>0</span>
+                            <button class="plus">
+                                <img src="images/icon-plus.svg" alt="plus" />
+                            </button>
+                        </div>
+
+                        <button class="add__cart" type="submit">
+                            <img src="images/icon-cart.svg" alt="cart logo" />
+                            <span> Add to cart </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <div class="lightbox inactive__lightbox">
+            <div class="lightbox__container__pic">
+                <img
+                    class="close"
+                    src="/images/icon-close.svg"
+                    alt="cross to close"
+                />
+
+                <div class="previous">
+                    <img src="/images/icon-previous.svg" alt="previous" />
+                </div>
+
+                <div class="pic lightbox__main__pic lightbox__animation">
+                    <img src="images/image-product-1.jpg" alt="sneakers" />
+                </div>
+
+                <div class="next">
+                    <img src="/images/icon-next.svg" alt="next" />
+                </div>
+
+                <div
+                    data-index="1"
+                    class="lightbox__thumbnail__pic pic lightbox__img__active__box"
+                >
+                    <img
+                        class="lightbox__img__active"
+                        src="images/image-product-1-thumbnail.jpg"
+                        alt="sneakers"
+                    />
+                </div>
+
+                <div data-index="2" class="lightbox__thumbnail__pic pic">
+                    <img
+                        src="images/image-product-2-thumbnail.jpg"
+                        alt="sneakers"
+                    />
+                </div>
+
+                <div data-index="3" class="lightbox__thumbnail__pic pic">
+                    <img
+                        src="images/image-product-3-thumbnail.jpg"
+                        alt="sneakers"
+                    />
+                </div>
+
+                <div data-index="4" class="lightbox__thumbnail__pic pic">
+                    <img
+                        src="images/image-product-4-thumbnail.jpg"
+                        alt="sneakers"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by <a href="#">Peally</a>.
+            </div>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>

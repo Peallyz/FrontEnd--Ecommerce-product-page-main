@@ -1,0 +1,56 @@
+form {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: space-between;
+    height: 60px;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 20px 20px;
+    border-radius: 10px;
+    height: 100%;
+    width: 60px;
+    background: inherit;
+    cursor: pointer;
+    img {
+        pointer-events: none;
+    }
+}
+
+.quantity {
+    display: flex;
+    background: $grisTresClair;
+    color: $noir;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 140px;
+    span {
+        line-height: 60px;
+        padding: 0 20px;
+        text-align: center;
+    }
+}
+
+.add__cart {
+    display: flex;
+    width: 260px;
+    justify-content: center;
+    text-align: center;
+    color: $white;
+    background: $orange;
+    font-size: 1.6rem;
+    font-weight: 700;
+    height: 100%;
+    img {
+        filter: brightness(100);
+        margin-right: 15px;
+    }
+    span {
+        display: block;
+    }
+}
