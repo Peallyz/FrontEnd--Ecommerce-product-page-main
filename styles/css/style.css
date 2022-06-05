@@ -588,7 +588,9 @@ main {
 }
 
 .next,
-.previous {
+.previous,
+.next1,
+.previous1 {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -600,22 +602,28 @@ main {
   cursor: pointer;
 }
 .next img,
-.previous img {
+.previous img,
+.next1 img,
+.previous1 img {
   pointer-events: none;
   filter: contrast(10);
 }
 .next:hover img,
-.previous:hover img {
+.previous:hover img,
+.next1:hover img,
+.previous1:hover img {
   filter: sepia(1) contrast(10) brightness(0.9);
 }
 
-.next {
+.next,
+.next1 {
   top: 40%;
   right: 0;
   transform: translate(50%, -50%);
 }
 
-.previous {
+.previous,
+.previous1 {
   top: 40%;
   left: 0;
   transform: translate(-50%, -50%);

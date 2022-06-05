@@ -14,7 +14,9 @@ const addToCart = document.querySelector(".add__cart");
 const cartContent = document.querySelector(".cart__content");
 const closeLightbox = document.querySelector(".close");
 const previous = document.querySelector(".previous");
-const next = document.querySelector(".next");
+const next = document.querySelector(".next1");
+const previous1 = document.querySelector(".previous1");
+const next1 = document.querySelector(".next");
 const nav = document.querySelector("nav");
 const closeNavIcon = document.querySelector(".menu__close");
 const navIcon = document.querySelector(".menu__logo");
@@ -154,7 +156,7 @@ function showCart() {
         <div class="content">
             <img
                 class="content__sneaker"
-                src="/images/image-product-1-thumbnail.jpg"
+                src="images/image-product-1-thumbnail.jpg"
                 alt="sneakers"
                 />
             <div class="content__txt">
@@ -224,7 +226,25 @@ previous.addEventListener("click", () => {
     }
     refreshImg();
 });
+
 next.addEventListener("click", () => {
+    if (currentIndex >= 4) {
+        currentIndex = 1;
+    } else {
+        currentIndex++;
+    }
+    refreshImg();
+});
+previous1.addEventListener("click", () => {
+    if (currentIndex <= 1) {
+        currentIndex = 4;
+    } else {
+        currentIndex--;
+    }
+    refreshImg();
+});
+
+next1.addEventListener("click", () => {
     if (currentIndex >= 4) {
         currentIndex = 1;
     } else {
