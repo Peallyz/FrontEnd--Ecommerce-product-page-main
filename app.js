@@ -167,7 +167,7 @@ function showCart() {
             </div>
             <img
                 class="trash"
-                src="/images/icon-delete.svg"
+                src="images/icon-delete.svg"
                 alt="trash"
                 />
         </div>
